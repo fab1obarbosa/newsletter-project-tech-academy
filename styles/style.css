@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+  font-size: 10px;
+  font-family: 'Courier New', Courier, monospace;
+
+  /*Color Variables*/
+  --primary-color: #566573;
+  --secondary-color: #F2CB05;
+  --dark-secondary-color: #F2AC29;
+  --text-color: #0D0D0D;
+  --background-color: #C8C7BE;
+  --hover-color:  #2F3940;
+  --footer-color: #6D716C;
+}
+
+* {
+  box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: "Source Sans Pro", 'Times New Roman';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+} 
+
+/* =====HEADER===== */
+
+header {
+    background-color: var(--primary-color);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 80px;
+    margin: auto;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+header .container img{
+    height: 30px;
+}
+
+/* MAIN */
+main {
+    margin-bottom: 100px;
+}
+
+main .container-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 100px auto 0px auto;
+}
+
+h2{
+    color: var(--secondary-color);
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+h3{
+    color: var(--primary-color);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 380px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 45px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+}
+form [type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+}
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+main .container-main img{
+    width: 600px;
+}
+
+/* CARDS */
+
+.cards {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.text--medium{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px var(--hover-color);
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img {
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    margin:20px;
+}
+
+.title{
+    margin-bottom:0px;
+}
+
+.desafio {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    height:400px;
+    align-items: center;
+    border: 1px solid black;
+    margin: 100px auto;
+    max-width: 980px;
+}
+
+

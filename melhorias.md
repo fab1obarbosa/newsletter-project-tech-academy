@@ -5,10 +5,14 @@ Arrumar imagem principal [OK]
 Criar seção de contato [OK]
 Arrumar erro do botão [OK]
 Criar footer [OK]
-Colocar ícones das redes sociais no footer
-Colocar links aos ícones
-Mudar main-figure do contact
-Colocar uma cor de fundo leve no articles com before
-Deixar novas seções responsáveis
-Organizar tags css e criar tags gerais
+Colocar ícones das redes sociais no footer [OK]
+Colocar links aos ícones [OK]
+Mudar main-figure do contact [OK]
+Deixar novas seções responsáveis [OK]
+Adicionar footer nas páginas de artigos [OK]
+Criar css compartilháveis (footer e header) [OK]
+Criar página de articles [OK]
+Organizar tags css e criar tags gerais [OK]
+Adicionar outros arquivos do projeto e limpar arquivos desnecessários [Ok]
+Ver como colocar arquivo json
 Subir tudo ao repositório do Github [OK]

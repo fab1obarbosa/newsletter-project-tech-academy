@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+  font-size: 10px;
+  font-family: 'Source Sans Pro', 'Times New Roman';
+
+  /*Color Variables*/
+  --primary-color: #566573;
+  --secondary-color: #f2cb05;
+  --dark-secondary-color: #f2ac29;
+  --text-color: #0d0d0d;
+  --background-color: #c8c7be;
+  --hover-color: #2f3940;
+  --footer-color: #6d716c;
+}
+
+/*=====GERAL=====*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html,
+body {
+  font-family: 'Source Sans Pro', 'Times New Roman';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  max-width: 98rem;
+  margin: auto;
+  transform: translateY(-10px);
+}
+button {
+  width: 10rem;
+  height: 3rem;
+  margin: 4rem 0 3rem 0px;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.8rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--hover-color);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+section img {
+  width: 85%;
+  margin: 0 7%;
+  border-radius: 5rem;
+  box-shadow: 5px 5px 15px -4px var(--hover-color);
+  transition: all 0.6s ease 0s;
+  object-fit: contain;
+}
+img:hover {
+  transform: translateY(-7px);
+}
+.publication {
+  font-size: 1.4rem;
+  margin: 0 0 0 11%;
+  color: var(--primary-color);
+}
+
+h1 {
+  margin: 4rem 0 2.5rem 0;
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+h4 {
+  margin: 1.5rem 0 1.5rem 0;
+  font-size: 1.5rem;
+}
+p {
+  margin-top: 3.8rem;
+  font-size: 1.8rem;
+}
+p:last-child {
+  padding-bottom: 10rem;
+}
+h2 {
+  margin: 4rem 0 2.5rem 0;
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+.content-video {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  section {
+    padding-inline: 2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  secion img {
+    min-height: 30rem;
+    object-fit: cover;
+  }
+
+  footer {
+    padding-inline: 2rem;
+  }
+}
